@@ -1,0 +1,29 @@
+[tool.mypy]
+mypy_path = "medimgx"
+explicit_package_bases = true
+ignore_missing_imports = true
+namespace_packages = true
+strict = true
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I", "W"]
+
+[tool.ruff.lint]
+select = [
+  "D",   # pydocstyle 
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "I",   # isort
+  "B",   # flake8-bugbear
+  "SIM", # flake8-simplify
+  "UP",  # pyupgrade
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "medimgx"
+]

@@ -1,0 +1,11 @@
+{
+    "python.envFile": "${workspaceFolder}/.env",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+    },
+    "editor.rulers": [
+        79
+    ],
+}
